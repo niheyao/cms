@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    username: nhy
+    password: root123
+    ##passowrd: Nhy@873529371
+    url: jdbc:mysql://10.208.102.148:3306/cms
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+    druid:
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: 111111
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+      aop-patterns: com.cmsprogect.*
+      filters: stat,wall,slf4j
+      filter:
+        stat:
+          slow-sql-millis: 1000
+          log-slow-sql: true
+        wall:
+
+  jdbc:
+    template:
+      query-timeout: 3
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
