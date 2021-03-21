@@ -3,7 +3,7 @@ spring:
     username: nhy
     password: root123
     ##passowrd: Nhy@873529371
-    url: jdbc:mysql://10.208.102.148:3306/cms
+    url: jdbc:mysql://192.168.1.100:3306/cms
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 

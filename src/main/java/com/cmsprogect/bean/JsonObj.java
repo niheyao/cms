@@ -30,4 +30,11 @@ public class JsonObj {
     public void setRow(List row) {
         this.row = row;
     }
+
+    public JsonObj resultWithoutRow(String errorCode,String errorMessage){
+        JsonObj jsonObj = new JsonObj();
+        jsonObj.errorCode=errorCode;
+        jsonObj.errorMessage=errorMessage;
+        return jsonObj;
+    }
 }
